@@ -1,0 +1,11 @@
+.breadcrumb-custom {
+    background-color: #202c45;
+}
+
+.breadcrumb-custom>li>a {
+    color: white;
+}
+
+.breadcrumb-custom>li>a:hover {
+    color: red;
+}

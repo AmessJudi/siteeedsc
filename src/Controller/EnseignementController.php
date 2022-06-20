@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+
+//Message class
 #[Route('/message', name: 'message_')]
 class EnseignementController extends AbstractController
 {
