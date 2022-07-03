@@ -34,7 +34,7 @@ class EnseignementController extends AbstractController
     #[Route('/audiomessage', name: 'audio')]
     public function audiomessage(): Response
     {
-        return $this->render('message/videomessage.html.twig', [
+        return $this->render('message/audiomessage.html.twig', [
             'controller_name' => 'audiomessage',
         ]);
     }
@@ -43,7 +43,7 @@ class EnseignementController extends AbstractController
     #[Route('/textmessage', name: 'text')]
     public function textmessage(): Response
     {
-        return $this->render('message/videomessage.html.twig', [
+        return $this->render('message/textmessage.html.twig', [
             'controller_name' => 'textmessagemessage',
         ]);
     }
