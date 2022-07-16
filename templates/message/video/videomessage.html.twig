@@ -1,0 +1,201 @@
+{% extends 'base.html.twig' %} {% block title %}Hello EnseignementController!{% endblock %} {% block body %}
+<div class="single">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-custom">
+                        <li class="breadcrumb-item active"><a href="#" aria-current="page"><span>Accueil</span> </a></li>
+                        <li class="breadcrumb-item"><a href="#">Exhortations</a></li>
+                        <li class="breadcrumb-item"><a href="#">Videos</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-8">
+                <h2>Message du 00/00/00</h2>
+                <div class="single-content">
+
+                    <!-- <img src="{{asset('img/single.jpg')}}" /> -->
+                    <video width="600" height="350" controls>
+                        <source src="{{asset('vid/god.mp4')}}" type="video/mp4">
+                        <source src="{{asset('img/single.jpg')}}" type="video/ogg">
+                      </video>
+                    <br>
+                    <h2>Laissez vous guider par le Saint-esprit</h2>
+                    <div>
+                        <span>Duree:4:13 </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span> <em>Posté le:19/06/2022</em>  </span>
+                    </div>
+
+                    <h3>Contenu</h3>
+                    <h4>Partie 1</h4>
+                    <p>
+                        Vestibulum sit amet ullamcorper sem. Integer hendrerit elit eget purus sodales maximus. Quisque ac nulla arcu. Morbi venenatis arcu ac arcu cursus pharetra. Morbi sit amet viverra augue, ac ultricies libero. Praesent elementum lectus mi, eu elementum
+                    </p>
+                    <h4> Partie 2</h4>
+                    <p>
+                        Mauris quis arcu finibus, posuere dolor eu, viverra felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In porta, ex vitae accumsan facilisis, nisi tellus dictum metus, quis fringilla dui tellus in tellus. Praesent
+                    </p>
+                    <h4>Partie 4</h4>
+                    <p>
+                        Mauris quis arcu finibus, posuere dolor eu, viverra felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In porta, ex vitae accumsan facilisis, nisi tellus dictum metus, quis fringilla dui tellus in tellus. Praesent
+                    </p>
+                </div>
+                <div class="single-tags">
+                    <a href="">Saint-esprit</a>
+                    <a href="">Dieu</a>
+                    <a href="">Servir</a>
+                    <a href="">Baptême</a>
+                    <a href="">Zele</a>
+                </div>
+                <!-- <div class="comment-form">
+                    <h2>Soumettre une question</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom *</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Prenoms *</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Post Comment" class="btn btn-custom">
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+
+            <div class="col-lg-4">
+                <h2>Message du 00/00/00</h2>
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <div class="single-bio">
+                            <!-- <div class="single-bio-img">
+                                <img src="{{asset('img/user.jpg')}}" />
+                            </div> -->
+                            <div class="testimonial-item">
+                                <img src="{{asset('img/author/author-1.jpg')}}" alt="Image" width="100px" height="100px">
+                                <br>
+                            </div>
+                            <div class="single-bio-text">
+                                <h3>Pasteur Nazaire HOUNKPADE</h3>
+                                <p>
+                                    Pasteur EEDSC Vedoko <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloremque voluptas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h2 class="widget-title">Exhortations récentes</h2>
+                        <div class="recent-post">
+                            <div class="post-item">
+                                <div class="post-img">
+                                    <video width="80" height="80" poster="{{asset('vid/placeholder.jpg')}}" controls>
+                                        <source src="{{asset('vid/god.mp4')}}" type="video/mp4">
+                                        <source src="{{asset('img/single.jpg')}}" type="video/ogg">
+                                      </video>
+                                </div>
+                                <div class="post-text">
+                                    <a href="">Ecouter le Saint-esprit</a>
+                                    <div class="post-meta">
+                                        <p>By<a href=""> Preacher Name</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <a href="">Lorem ipsum dol mmm nn nn nnn</a>
+                                <div class="post-meta">
+                                    <p>Par<a href="">Pasteur Nazaire Houkpa..</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-post">
+                            <div class="post-item">
+                                <div class="post-img">
+                                    <video width="80" height="80" poster="{{asset('vid/placeholder.jpg')}}" controls>
+                                        <source src="{{asset('vid/god.mp4')}}" type="video/mp4">
+                                        <source src="{{asset('img/single.jpg')}}" type="video/ogg">
+                                      </video>
+                                </div>
+                                <div class="post-text">
+                                    <a href="">La place de l'homme dans les oeuvres de Dieu</a>
+                                    <div class="post-meta">
+                                        <p>By<a href=""> Preacher Name</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                <div class="post-meta">
+                                    <p>Par<a href="">Pasteur Nazaire Houkpa..</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="sidebar-widget">
+                    <div class="image-widget">
+                        <a href="#"><img src="{{asset('img/blog-1.jpg')}}" alt="Image"></a>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <div class="image-widget">
+                        <a href="#"><img src="{{asset('img/blog-2.jpg')}}" alt="Image"></a>
+                    </div>
+                </div> -->
+
+                <div class="sidebar-widget">
+                    <h2 class="widget-title">Parcourir</h2>
+                    <div class="category-widget">
+                        <ul>
+                            <li><a href="">Messages Audio</a><span>(98)</span></li>
+                            <li><a href="">Messages videos</a><span>(87)</span></li>
+                            <li><a href="">Messages </a><span>(76)</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="sidebar-widget">
+                    <div class="image-widget">
+                        <a href="#"><img src="{{asset('img/blog-3.jpg')}}" alt="Image"></a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="sidebar-widget">
+                    <h2 class="widget-title">Tags Cloud</h2>
+                    <div class="tag-widget">
+                        <a href="">National</a>
+                        <a href="">International</a>
+                        <a href="">Economics</a>
+                        <a href="">Politics</a>
+                        <a href="">Lifestyle</a>
+                        <a href="">Technology</a>
+                        <a href="">Trades</a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="sidebar-widget">
+                    <h2 class="widget-title">Text Widget</h2>
+                    <div class="text-widget">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Integer lorem augue purus mollis sapien, non eros leo in nunc. Donec a nulla vel turpis tempor ac vel justo. In hac platea nec eros. Nunc eu enim non turpis id augue.
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
