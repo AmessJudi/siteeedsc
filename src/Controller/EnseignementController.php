@@ -30,7 +30,7 @@ class EnseignementController extends AbstractController
     #[Route('/videomessage', name: 'video')]
     public function videocontent(): Response
     {
-        return $this->render('message/video/videomessage.html.twig'
+         return $this->render('message/video/videomessage.html.twig'
         );
     }
 
