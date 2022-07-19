@@ -4,22 +4,133 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper { margin: 1em 5px; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Pacourir les Enseignements</h1>
-    <div>
-        <h2>Messages</h2>
-        <h2>Videos</h2>
-        <h2>Audios</h2>
+<main>
+	<div class="col-lg-6">
+        <nav aria-label="breadcrumb" style="margin-top:50px;">
+		<ol class="breadcrumb breadcrumb-custom">
+			<li class="breadcrumb-item active">
+				<a href="#" aria-current="page">
+					<span>Accueil</span>
+				</a>
+			</li>
+			<li class="breadcrumb-item">
+				<a href="#">Exhortations</a>
+			</li>
+			<li class="breadcrumb-item">
+				<a href="#">Videos</a>
+			</li>
+		</ol>
+	</nav>
     </div>
 
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/judi_doc/Eglise/SiteEEDSC/src/Controller/EnseignementController.php'|file_link(0) }}">src/Controller/EnseignementController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/judi_doc/Eglise/SiteEEDSC/templates/enseignement/index.html.twig'|file_link(0) }}">templates/enseignement/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<div class="card text-center">
+		<div class="card-header col-6">
+			<ul class="nav nav-pills card-header-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Video</a>
+				</li>
+			</ul>
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-lg-12">
+					<h5 class="card-title">Rubrique</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<div class="row">
+						<div class="col-lg-3" style=" width:300px; height:300px;; margin:0;">
+							<div id="vdeo1">
+								<video width="250" height="250" controls>
+									<source src="{{asset('vid/god.mp4')}}" type="video/mp4">
+									<source src="{{asset('img/single.jpg')}}" type="video/ogg">
+								</video>
+							</div>
+                            <label for="video1" class="label label-primary"> Les bienfaits du saint-estprit</label>
+                            
+						</div>
+						<div class="col-lg-3" style=" width:300px; height:300px;; margin: 5px;">
+							<div id="vdeo1">
+								<video width="250" height="250" controls>
+									<source src="{{asset('vid/god.mp4')}}" type="video/mp4">
+									<source src="{{asset('img/single.jpg')}}" type="video/ogg">
+								</video>
+							</div>
+                            <label for="video1" class="label label-primary"> Les bienfaits du saint-estprit</label>
+                            
+						</div>
+						<div class="col-lg-3" style=" width:300px; height:300px;; margin: 5px;">
+							<div id="vdeo1">
+								<video width="250" height="250" controls>
+									<source src="{{asset('vid/god.mp4')}}" type="video/mp4">
+									<source src="{{asset('img/single.jpg')}}" type="video/ogg">
+								</video>
+							</div>
+                            <label for="video1" class="label label-primary"> Les bienfaits du saint-estprit</label>
+                            
+						</div>
+					</div>
+
+					<a href="#" class="btn btn-primary">Voir plus >></a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="card text-center">
+		<div class="card-header">
+			<ul class="nav nav-pills card-header-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Video</a>
+				</li>
+			</ul>
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="lg-6">
+					<h5 class="card-title">Rubrique</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div>
+                        <ul>
+                            <li><a href="#">Message...</a></li>
+                            <li><a href="#">Message...</a></li>
+                            <li><a href="#">Message...</a></li>
+                            <li><a href="#">Message...</a></li>
+                        </ul>
+                    </div>
+					<a href="#" class="btn btn-primary">Voir plus >></a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="card text-center">
+		<div class="card-header">
+			<ul class="nav nav-pills card-header-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Video</a>
+				</li>
+			</ul>
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="lg-6">
+					<h5 class="card-title">Rubrique</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="btn btn-primary">Voir plus >></a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</main>
+
+
+
 
 {% endblock %}

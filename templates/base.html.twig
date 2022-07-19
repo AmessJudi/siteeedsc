@@ -24,22 +24,34 @@
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        <!-- Top Bar Start -->
-        <div class="top-bar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="logo">
-                            <a href="index.php">
-                                <h1>EE<span>DSC</span></h1>
-                                <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                            </a>
-                        </div>
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{{asset('/lib/flaticon/font/flaticon.css')}}" rel="stylesheet">
+    <link href="{{asset('/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{asset('/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('/css/custom-style.css')}}" rel="stylesheet"> 
+    
+    {% block stylesheets %} {{ encore_entry_link_tags('app') }} 
+    {% endblock %} 
+    {% block javascripts %} {{ encore_entry_script_tags('app') }} 
+    {% endblock %}
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="logo">
+                        <a href="index.php">
+                            <h1>EE<span>DSC</span></h1>
+                            <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                        </a>
                     </div>
                     <div class="col-lg-8 col-md-7 d-none d-lg-block">
                         <div class="row">
@@ -92,34 +104,30 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="/home" class="nav-item nav-link active">Acceuil</a>
-                            <a href="/messie" class="nav-item nav-link">VERS LE DISCIPOLAT</a>
-                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ENSEIGNEMENT</a> <!-- Pages -->
-                                <div class="dropdown-menu">
-                                    <a href="blog.php" class="dropdown-item">Vidéos</a>
-                                    <a href="single.php" class="dropdown-item">Audios</a>
-                                    <a href="team.php" class="dropdown-item">Textes</a>
-                                    <a href="booking.php" class="dropdown-item">Autres...</a>
-                                </div>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="/home" class="nav-item nav-link active">Acceuil</a>
+                        <a href="/messie" class="nav-item nav-link">VERS LE DISCIPOLAT</a>
+                        <a href="/message/" class="nav-item nav-link" >ENSEIGNEMENT</a>
+                            <!-- Pages -->
+                            {# <div class="dropdown-menu">
+                                <a href="/message/videomessage" class="dropdown-item">Vidéos</a>
+                                <a href="/message/audiomessage" class="dropdown-item">Audios</a>
+                                <a href="/message/textmessage" class="dropdown-item">Textes</a>
+                                <a href="#" class="dropdown-item">Autres...</a>
+                            </div> #}
+                        <a href="/service" class="nav-item nav-link">SERVICES</a>
+                        <a href="/agenda" class="nav-item nav-link">AGENDA</a>
+                        <a href="/contact" class="nav-item nav-link">CONTACT</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">A propos de nous</a>
+                            <!-- Pages -->
+                            <div class="dropdown-menu">
+                                <a href="blog.php" class="dropdown-item">Blog Grid</a>
+                                <a href="single.php" class="dropdown-item">Detail Page</a>
+                                <a href="team.php" class="dropdown-item">Team Member</a>
+                                <a href="booking.php" class="dropdown-item">Schedule Booking</a>
                             </div>
-                            <a href="/services" class="nav-item nav-link">SERVICES</a>
-                            <a href="/programmes" class="nav-item nav-link">AGENDA</a>
-                            <a href="/contact" class="nav-item nav-link">CONTACT</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">A propos de nous</a> <!-- Pages -->
-                                <div class="dropdown-menu">
-                                    <a href="blog.php" class="dropdown-item">EEDSC</a>
-                                    <a href="single.php" class="dropdown-item"> Extensions du ministère</a>
-                                    <a href="team.php" class="dropdown-item">Le Pasteur</a>
-                                    <a href="booking.php" class="dropdown-item">Ses ouvrages</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-auto">
-                            <a class="btn btn-custom" href="#">* EN DIRECT</a>
                         </div>
                     </div>  
                 </nav>
