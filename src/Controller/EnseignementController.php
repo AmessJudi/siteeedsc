@@ -22,10 +22,16 @@ class EnseignementController extends AbstractController
     }
 
     //Video message route controller
+    #[Route('/videoindex', name: 'videoindex')]
+    public function videoindex(): Response
+    {
+        return $this->render('message/video/index.html.twig'
+        );
+    }
     #[Route('/videomessage', name: 'video')]
     public function videomessage(): Response
     {
-        return $this->render('message/videomessage.html.twig', [
+        return $this->render('message/video/videomessage.html.twig', [
             'controller_name' => 'videomessage',
         ]);
     }

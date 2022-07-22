@@ -14,12 +14,14 @@
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="{{asset('lib/flaticon/font/flaticon.css')}}" rel="stylesheet">
+        <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">
+        <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{{asset('css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('css/custom-style.css')}}" rel="stylesheet">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -94,16 +96,16 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
-                            <a href="/home" class="nav-item nav-link active">Acceuil</a>
+                            <a href="/" class="nav-item nav-link active">Acceuil</a>
                             <a href="/messie" class="nav-item nav-link">VERS LE DISCIPOLAT</a>
                              <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ENSEIGNEMENT</a> <!-- Pages -->
-                                <div class="dropdown-menu">
-                                    <a href="blog.php" class="dropdown-item">Vidéos</a>
-                                    <a href="single.php" class="dropdown-item">Audios</a>
+                                <a href="/message/" class="nav-link " {# data-toggle="dropdown" #}>ENSEIGNEMENT</a> <!-- Pages -->
+                               {#  <div class="dropdown-menu">
+                                    <a href="/message/videomessage" class="dropdown-item">Vidéos</a>
+                                    <a href="/message/videomessage" class="dropdown-item">Audios</a>
                                     <a href="team.php" class="dropdown-item">Textes</a>
                                     <a href="booking.php" class="dropdown-item">Autres...</a>
-                                </div>
+                                </div> #}
                             </div>
                             <a href="/services" class="nav-item nav-link">SERVICES</a>
                             <a href="/programmes" class="nav-item nav-link">AGENDA</a>
@@ -199,17 +201,17 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="{{asset('lib/easing/easing.min.js')}}"></script>
+        <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('lib/waypoints/waypoints.min.js')}}"></script>
+        <script src="{{asset('lib/counterup/counterup.min.js')}}"></script>
         
         <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+        <script src="{{asset('mail/jqBootstrapValidation.min.js')}}"></script>
+        <script src="{{asset('mail/contact.js')}}"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{{asset('js/main.js')}}"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     </body>

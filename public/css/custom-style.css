@@ -9,3 +9,7 @@
 .breadcrumb-custom>li>a:hover {
     color: red;
 }
+
+a {
+    text-decoration: none;
+}
